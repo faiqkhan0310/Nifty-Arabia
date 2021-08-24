@@ -1,0 +1,1116 @@
+@font-face {
+    font-family: 'AvenirNextLTProIt';
+    src: url('fonts/AvenirNextLTProIt.eot');
+    src: url('fonts/AvenirNextLTProIt.eot') format('embedded-opentype'),
+         url('fonts/AvenirNextLTProIt.woff2') format('woff2'),
+         url('fonts/AvenirNextLTProIt.woff') format('woff'),
+         url('fonts/AvenirNextLTProIt.ttf') format('truetype'),
+         url('fonts/AvenirNextLTProIt.svg#AvenirNextLTProIt') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirNextLTProBold';
+    src: url('fonts/AvenirNextLTProBold.eot');
+    src: url('fonts/AvenirNextLTProBold.eot') format('embedded-opentype'),
+         url('fonts/AvenirNextLTProBold.woff2') format('woff2'),
+         url('fonts/AvenirNextLTProBold.woff') format('woff'),
+         url('fonts/AvenirNextLTProBold.ttf') format('truetype'),
+         url('fonts/AvenirNextLTProBold.svg#AvenirNextLTProBold') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirNextLTProRegular';
+    src: url('fonts/AvenirNextLTProRegular.eot');
+    src: url('fonts/AvenirNextLTProRegular.eot') format('embedded-opentype'),
+         url('fonts/AvenirNextLTProRegular.woff2') format('woff2'),
+         url('fonts/AvenirNextLTProRegular.woff') format('woff'),
+         url('fonts/AvenirNextLTProRegular.ttf') format('truetype'),
+         url('fonts/AvenirNextLTProRegular.svg#AvenirNextLTProRegular') format('svg');
+}
+
+
+body {
+    font-family: 'AvenirNextLTProRegular' !important;
+    color: #262626;
+}
+a {
+    color: #262626;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    
+    box-shadow: unset;
+}
+a:hover {
+    font-weight: 600;
+    color: #08101f ;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'AvenirNextLTProBold';
+}
+svg {
+    width: 15px;
+    height: 15px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+
+
+.btn {
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 25px;
+  border-radius: 14px;
+  background-color: #000;
+  padding: 11px 41px !important; 
+  color: #fff;
+  min-width: 185px;
+}
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid #08101f;
+    color: #08101f !important;
+} 
+
+.product-card-sub-col:hover  img, .profile-card-sub-col:hover  img {
+    animation-name: pulse;
+}
+.form-control {
+    border: 1px solid #F4F4F4;
+  border-radius: 14px;
+  background-color: #FFFFFF;
+    padding: 8px 20px;
+    color: #979797;
+    height: 50px;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #1e2125;
+    background-color: transparent;
+}
+.dropdown-toggle {
+    cursor: pointer;
+}
+.main-title-col h1 {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sub-title-col {
+    margin: 50px 0px 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-title-col h5 {
+    font-size: 28px;
+}
+.sub-title-col a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.main-title-col {
+    padding: 80px 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-title-col h1>div {
+    margin-right: 30px !important;
+}
+.product-detail {
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+}
+.product-detail p span>div {
+    margin-bottom: -6px !important;
+}
+.product-detail h1 {
+    margin-bottom: 15px;
+}
+.product-detail p {
+    margin-bottom: 25px;
+}
+.featured-sub-col , .featured-col{
+    position: relative;
+}
+.featured-col {
+    color: #fff;
+}
+.featured-col .banner-desc-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.featured-col .banner-desc-img .product-detail {
+    position: relative;
+    border-radius: 14px;
+    padding-top: 200px;
+}
+.featured-col>img {
+    width: 100%;
+}
+.featured-col p img {
+    border: 2px solid #fff !important;
+    border-radius: 50%;
+}
+.featured-col h1 {
+    font-weight:  bold;
+}
+.featured-col h1 span {
+    font-family: 'AvenirNextLTProRegular';
+}
+.product-card {
+    margin-bottom: 30px;
+}
+
+
+/* header style start here */
+.custome-nav {
+    padding: 30px 0px;
+    margin-bottom: 30px;
+}
+.custome-nav ul li {
+    margin-left: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.custome-nav form {
+    position: relative;
+    
+}
+
+.custome-nav ul li:hover a {
+    animation-name: rubberBand ;
+}
+.custome-nav .navbar-brand:hover img {
+    animation-name: bounceIn ;
+}
+.custome-nav ul li:hover .btn {
+    animation-name: headShake;
+}
+
+.custome-nav form .fa-search {
+    position: absolute;
+    right: 20px;
+    top: 17px;
+}
+.custome-nav .form-control {
+    background-color: #fff;
+
+    border-radius: 14px;
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 21px;
+  min-width: 325px;
+}
+.custome-nav .dropdown {
+    cursor: pointer;
+}
+.custome-nav .user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    padding: 5px;
+    margin-right: 10px;
+}
+.headerbar-section {
+    background-color: #08101f;
+}
+.headerbar-col ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerbar-col ul li {
+    padding: 15px;
+}
+.headerbar-col ul li a {
+    color: rgb(255 255 255 / 29%) !important;
+}
+.headerbar-col ul li a:hover {
+    color: #b7830a !important;
+}
+
+.custome-nav .dropdown-menu {
+    background-color: #182131;
+    padding: 10px 6px;
+}
+.custome-nav .dropdown-menu li{
+    margin-left: 0px;
+}
+.custome-nav .dropdown-menu li:first-child{
+    margin-bottom: 10px;
+}
+.custome-nav .dropdown-item:focus, .custome-nav .dropdown-item:hover {
+    color: unset;
+    background-color: unset;
+}
+
+
+
+/* banner style start here */
+.banner-section {
+    margin: 50px 0px;
+}
+.banner-desc h1 {
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 73px;
+}
+.banner-desc p {
+    font-size: 24px;
+    font-weight: 300;
+}
+.banner-desc p span {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 500;
+}
+.banner-desc p span>div {
+    margin-bottom: -6px !important;
+}
+.banner-desc-img {
+    padding: 14px;
+    border-radius: 14px;
+    -webkit-box-shadow: 0 9px 19px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 9px 19px 0 rgba(0,0,0,0.1);
+}
+.banner-desc-img img {
+    border-radius: 14px;
+}
+.banner-desc .banner-btn {
+    text-transform: uppercase;
+}
+.banner-desc .banner-btn a:hover {
+    animation-name: headShake;
+}
+.banner-desc .Listen-Now-btn {
+    border: 1px solid #000;
+    color: #262626;
+    background-color: transparent;
+}
+.banner-desc .Listen-Now-btn:hover {
+    color: #fff !important;
+    background-color: #08101f;
+}
+.banner-carousel .owl-dot.active {
+    background-color: #fff !important;
+} 
+
+
+/* live auction section style start here */
+.product-card-sub-col , .profile-card-sub-col {
+    padding: 15px 15px 20px;
+    border-radius: 16px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 9px 19px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 9px 19px 0 rgba(0,0,0,0.1);
+    position: relative;
+}
+.product-card-sub-col hr {
+    background-color: rgb(118 118 118 / 25%);
+    margin: 20px 0px;
+}
+.product-card-owner-details ul li:last-child, .product-card-details ul li:last-child {
+    padding-right: 30px;
+    min-width: 170px;
+}
+.product-card-details ul li h5 {
+    font-family: 'AvenirNextLTProRegular';
+}
+.product-card-owner-details p {
+    color: #767676;
+}
+.product-card-owner-details span {
+    font-size: 14px;
+}
+.product-card-img img {
+    width: 100%;
+    border-radius: 14px !important;
+}
+.product-card-details ul li:last-child> span {
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+}
+.product-card-details ul li:last-child> span>div {
+    margin-right: 10px !important;
+}
+.product-card-details p {
+    color: #767676;
+}
+.product-card-details p:last-child {
+    font-size: 14px;
+}
+.product-card-img {
+    position: relative;
+}
+.auction-card-details {
+    margin-top: 47px;
+    color: #fff;
+}
+.auction-card-details::after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    right: 0px;
+    height: 115px;
+    background-color: #000;
+    bottom: 0;
+    z-index: -99;
+}
+.countdown-span span {
+font-size: 20px;
+color: #fff;
+margin-right: 10px;
+text-align: center;
+font-family: 'AvenirNextLTProBold';
+}
+.countdown-span span p {
+    font-family: 'AvenirNextLTProregular';
+}
+.countdown-span p {
+    margin-bottom: 0px;
+}
+.auction-card-details ul li:last-child> span {
+    opacity: 1;
+}
+
+
+/* learn more section style start here */
+.learn-more-card-sub-col {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 30px;
+    border-radius: 14px;
+}
+.learn-more-card-sub-col h1 {
+   font-weight: 500;
+    font-size: 38px;
+}
+
+.learn-more-card-sub-col p {
+    min-height: 170px;
+    font-size: 20px;
+    opacity: 0.7;
+}
+.learn-more-card-sub-col a {
+    color: #fff;
+}
+
+
+/* best seller section style start here */
+.coverImg {
+    object-fit: cover;
+    width: 100% !important;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+.profile-card-sub-col:hover .profile-pic-col img {
+    animation-name: rotateIn;
+}
+.profile-pic-col {
+    text-align: center;
+    margin-top: -8px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+   
+}
+.profile-pic-col> div {
+    margin-top: -72px !important;
+    margin-bottom: 15px !important;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+.profile-pic-col p {
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+
+/* hot collection section style start here */
+
+.hot-collections-section .explore-filter-col {
+    display: flex;
+    align-items: center;
+}
+.explore-filter-col select {
+width: 130px;
+border: 1px solid #F4F4F4;
+border-radius: 14px;
+background-color: #FFFFFF;
+color: rgb(38 38 38 / 50%);
+height: 50px;
+}
+.explore-filter-col .search-input{
+position: relative;
+min-width: 325px;
+}
+.explore-filter-col .search-input svg {
+    position: absolute;
+    right: 15px;
+    top: 18px;
+}
+.hot-collections-section .product-card {
+    margin-bottom: 30px;
+}
+
+
+/* details page style start here */
+
+.details-col .product-card-img {
+    padding: 15px;
+    -webkit-box-shadow: 0 9px 19px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 9px 19px 0 rgba(0,0,0,0.1);
+    border-radius: 14px;
+    z-index: 9999;
+}
+.details-col .product-card-img>img {
+    opacity: 1;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.details-col .product-card-img .like-play-col{
+    font-size: 28px;
+    
+}
+.details-col .product-card-img .like-play-col svg{
+    width: 28px;
+    height: 28px;    
+}
+.details-col .product-card-img .like-play-col span {
+    margin-left: 30px;
+}
+.details-col .product-card-img {
+    height: 100%;
+}
+
+.details-col-desc .details-desc {
+    padding: 20px 10px;
+}
+
+.details-col-desc .details-desc-title h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.details-col-desc .details-desc-title ul {
+    display: flex;
+    align-items: center;
+    color: #767676;
+    margin-bottom: 30px;
+}
+.details-col-desc .details-desc-title ul li svg {
+    width: 20px;
+    height: 20px;
+}
+.details-col-desc .details-desc-title p b {
+    font-size: 16px;
+    font-weight: 700;
+}
+.details-col-desc .details-desc-title p span {
+    color: #FF3506;
+}
+.details-col-desc .details-desc-title p:last-child {
+    opacity: 0.5;
+}
+.details-col-desc .details-desc-title .details-col-icons svg {
+   font-size: 28px;
+   width: 28px;
+   height: 28px;
+   margin-left: 30px;
+   opacity: 0.5;
+}
+.details-col-desc .details-desc-artists , .details-col-desc .details-about-track {
+    margin-bottom: 30px;
+}
+.details-col-desc .details-about-track p {
+    font-size: 20px;
+}
+.details-col-desc .details-price {
+    margin-bottom: 30px;
+}
+.details-col-desc .details-price h2 {
+    font-size: 48px;
+    font-family: 'AvenirNextLTProRegular';
+}
+.details-col-desc .details-price span{
+display: block;
+font-size: 22px;
+}
+.details-col-desc .details-col-btn {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.details-col-desc .details-col-btn .btn  {
+    width: 100%;
+    text-transform: capitalize;
+}
+.details-col-desc .details-col-btn a:hover {
+    animation-name: rubberBand;
+}
+
+.details-col-desc .details-col-btn .btn:last-child {
+    background-color: transparent;
+    border: 1px solid #08101f;
+    color: #08101f !important;
+}
+ .nav-tabs {
+    border-bottom: 1px solid #979797;
+}
+.detail-col-tabs-content .nav-tabs .nav-link {
+color: #000;
+ border: none;
+ padding: 15px;
+}
+.detail-col-tabs-content .nav-tabs .nav-link.active, .detail-col-tabs-content .nav-tabs .nav-item.show .nav-link {
+    border-bottom: 2px solid #000;
+    
+    font-family: 'AvenirNextLTProBold';
+}
+.global-history-details ul li {
+    border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+    margin-bottom: 20px;
+}
+.global-history-details b {
+    font-family: 'AvenirNextLTProBold';
+}
+
+/* marketplace page style start here */
+.marketplace-col .explore-filter-col select {
+    background-color: #f4f4f4;
+}
+.marketplace-title h1 {
+    font-family: 'AvenirNextLTProBold';
+}
+
+
+/* blog page style start here */
+.blog-card p {
+    font-size: 20px !important;
+    margin-bottom: 0px;
+}
+
+/* login form page style start here */
+.login-col-form {
+    -webkit-box-shadow: 0 9px 19px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 9px 19px 0 rgba(0,0,0,0.1);
+    border-radius: 14px;
+    padding: 80px 30px  30px;
+}
+.login-col-form .form-group , .setting-form-col .form-group {
+    margin-bottom: 30px;
+}
+.login-col-form .form-control , .setting-form-col .form-control, .create-col-form  .form-control{
+    border-radius: 16.66px;
+  background-color: rgba(216,216,216,0.13);
+  border: none;
+}
+.login-col-form label, .setting-form-col label {
+    font-family: 'AvenirNextLTProBold';
+    color: #616161;
+    margin-bottom: 15px;
+}
+.login-uploadimg {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #fafafa;
+    margin: 0px auto;
+    position: relative;
+    margin-bottom: 60px;
+   
+}
+.login-uploadimg img {
+    width: 100%;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+ .login-uploadimg span a {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    width: 43px;
+    height: 43px;
+    background-color: #262626;
+    border-radius: 50%;
+}
+
+.login-col-form .text-area .form-control, .setting-form-col .text-area .form-control, .create-col-form .text-area .form-control {
+    min-height: 200px;
+}
+
+.setting-form-col .text-area .form-control {
+    min-height: 290px;
+}
+
+.login-col-form .text-area small, .setting-form-col .text-area small , .create-col-form .text-area small {
+    font-family: 'AvenirNextLTProRegular';
+}
+.login-col-form .btn:hover ,  .create-col-form  .btn:hover {
+    animation-name: rubberBand;
+}
+
+
+/* setting page style start here */
+.profile-img-uploader .upload-btn-col p {
+    font-size: 20px ;
+    color: #767676;
+}
+
+.profile-img-uploader .upload-btn-col .btn {
+    padding: 12px 15px 10px !important;
+    min-width: 159px;
+    text-transform: capitalize;
+}
+
+
+/* activity page style start here */
+.comment-col .comment-col-area {
+    display: flex;
+    align-items: flex-start;
+}
+.comment-details {
+    width: 100%;
+}
+.notification-section .comment-col-area h5 {
+    font-size: 20px;
+    font-family: 'AvenirNextLTProBold';
+}
+.comment-details .comment-details-col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.comment-details-col ul {
+    display: flex;
+    align-items: center;
+}
+
+
+/* profile page style start here */
+.profile-img {
+    border-bottom-right-radius: 80px;
+    overflow: hidden;
+}
+.profile-details-title li svg {
+    vertical-align: top;
+}
+.profile-section .social-links a {
+    width: 34px;
+    height: 34px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+}
+.profile-section .social-links li:hover a{
+    animation-name: bounce;
+}
+.profile-section .social-links a svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* create page style start here */
+.create-col-form{
+    -webkit-box-shadow: 0 9px 19px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 9px 19px 0 rgb(0 0 0 / 10%);
+    border-radius: 14px;
+    padding: 0px 0px 30px;
+}
+.create-col-form .login-uploadimg {
+    width: 100%;
+    border-radius: 0px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.create-upload-img .input-group{
+    opacity: 0;
+    width: 0px;
+}
+.create-col-form form {
+    padding: 0px 30px 50px;
+}
+.create-col-form form label {
+    font-family: 'AvenirNextLTProBold';
+    margin-bottom: 15px;
+}
+.create-col-form .form-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.create-col-form select {
+    height: 50px;
+    border-radius: 16.66px;
+  background-color: rgba(216,216,216,0.13);
+  border: none;
+  padding: 10px 15px;
+}
+
+.create-col-form .nav-tabs {
+    border: none;
+}
+.create-col-form .nav-tabs .btn {
+    min-width: 140px;
+    padding: 11px 15px !important;
+    font-size: 18px;
+    background-color: rgba(216,216,216,0.13);
+    color: rgb(195 194 194);
+}
+.create-col-form .nav-tabs .btn.active {
+    color: #000;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+.create-col-form .nav-tabs .btn.active img:first-child ,  .create-col-form .nav-tabs .btn:hover img:first-child {
+    display: none;
+}
+.create-col-form .nav-tabs .btn.active img:last-child , .create-col-form .nav-tabs .btn:hover img:last-child{
+    display: inline-block !important;
+}
+
+.create-col-form .nav-tabs .btn img {
+    width: 20px;
+    margin-right: 5px;
+}
+.priceIn-dollar {
+    position: relative;
+}
+.priceIn-dollar .form-control {
+    background-color: rgb(216 216 216 / 50%);
+}
+.priceIn-dollar span {
+    position: absolute;
+    right: 30px;
+    padding-left: 10px;
+    bottom: 6px;
+    border-left: 1px solid #262626;
+    font-size: 20px;
+    padding-top: 6px !important;
+    padding-bottom: 2px !important;
+    width: 100px;
+}
+.priceIn-dollar span img {
+    margin-top: -6px;
+}
+.nft-price-input  select {
+    position: absolute;
+    bottom: 8px;
+    right: 0px;
+    z-index: 9999;
+    width: 122px;
+    border-left: 1px solid;
+    border-radius: 0px;
+    height: 36px;
+    background-color: transparent;
+    padding: 0px 12px;
+}
+.nft-price-input  select:focus {
+    box-shadow: unset;
+    border-color: unset;
+}
+option#ETH[value] { 
+    /* display: none !important; */
+    background-color: #000;
+ }
+
+
+
+
+
+
+
+/* footer style start here */
+.footer-section {
+    padding: 80px 0px 50px;
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+}
+.footer-logo , .footer-logo  a {
+    display: inline-block;
+}
+.footer-logo:hover a {
+    animation-name: bounceIn;
+}
+.footer-section svg {
+    color: #fff;
+}
+.footer-section .footer-sub-col h4 {
+    font-size: 16px;
+}
+.footer-section .footer-sub-col ul li  {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.footer-section .footer-social-icon ul {
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+.footer-section .footer-social-icon ul li {
+    margin-right: 15px;
+}
+.footer-section ul li a {
+    display: inline-block;
+    color: #fff;
+}
+.footer-section ul li a:hover {
+    animation-name: rubberBand ;
+}
+
+
+
+/* mobile responsive code start here */
+ @media (max-width: 767px) {
+.navbar-brand {
+    width: 40%;
+}
+.navbar-toggler  {
+    border: 1px solid #000;
+    padding-top: 9px;
+}
+.custome-nav {
+    padding: 10px 0px;
+    margin-bottom: 30px;
+}
+.navbar-toggler .toggle-icon {
+    width: 25px;
+    display: block;
+    border: 1px solid #000;
+    margin-bottom: 5px;
+}
+.btn {
+    padding: 7px 23px 3px !important;
+    min-width: unset;
+}
+.custome-nav ul li {
+    margin-left: 0px;
+}
+.banner-section {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+.banner-desc h1 {
+    font-size: 26px;
+    line-height: 35px;
+}
+.main-title-col {
+    padding: 40px 10px 30px;
+    justify-content: center;
+}
+.main-title-col h1 {
+    font-size: 26px;
+}
+.product-card-owner-details ul li:last-child, .product-card-details ul li:last-child {
+    padding-right: 0px;
+    min-width: unset;
+}
+.banner-desc .banner-btn {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-desc {
+    margin-bottom: 30px;
+}
+.banner-desc-img-col {
+    padding-left: 12px !important;
+}
+.featured-col .banner-desc-img .product-detail {
+    position: relative;
+    border-radius: 14px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+.featured-section .main-title-col {
+padding-bottom: 0px;
+}
+.product-card:last-child {
+    margin-bottom: 0px;
+}
+.profile-card  {
+    margin-bottom: 30px;
+}
+.learn-more-card-sub-col {
+    padding: 30px 30px;
+}
+.learn-more-card-sub-col h1 {
+    font-size: 22px;
+    margin-bottom: 30px !important;
+
+}
+.learn-more-card-sub-col h1 br {
+    display: none;
+}
+.learn-more-card-sub-col p {
+    min-height: unset;
+    font-size: 16px;
+    opacity: 0.7;
+}
+.learn-more-card {
+    margin-bottom: 30px;
+}
+.learn-more-card:last-child {
+    margin-bottom: 0px;
+}
+.hot-collections-section .explore-filter-col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-title-col , .hot-collections-section .explore-filter-col {
+    flex-wrap: wrap;
+}
+.explore-filter-col .search-input {
+    position: relative;
+    min-width: 100%;
+}
+.main-title-col , .hot-collections-section .explore-filter-col >span {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.marketplace-col .main-title-col {
+    padding-top: 0px !important;
+}
+.marketplace-col .main-title-col .explore-filter-col span {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.marketplace-col .main-title-col .explore-filter-col select {
+    margin-bottom: 20px;
+    margin-right: 0px !important;
+    width: 48% !important;
+}
+.details-col-desc .details-desc-title h1 {
+    font-size: 26px;
+}
+.details-section .details-row {
+    margin-bottom: 0px !important;
+}
+.create-col-form .nav-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.create-col-form .nav-tabs .btn {
+    min-width: 110px;
+    margin-right: 0px !important;
+}
+.details-col {
+    padding-left: 12px  !important;
+}
+.create-col-form form {
+    padding: 0px 12px 10px;
+}
+.profile-section .profile-img-col {
+    padding-right: 12px !important;
+}
+.profile-section .product-card-owner-details {
+    margin-bottom: 0px !important;
+}
+.details-col-desc .details-price h2 {
+    font-size: 30px;
+}
+.detail-col-tabs {
+    margin-top: 0px !important;
+}
+.main-title-col a {
+    font-size: 14px;
+}
+.login-col-form {
+    padding: 30px 12px 30px;
+}
+.profile-img-uploader {
+    flex-wrap: wrap;
+}
+.profile-img-uploader .login-uploadimg {
+    margin: 20px auto !important;
+}
+.profile-img-uploader .upload-btn-col .btn {
+    padding: 12px 15px 10px !important;
+    min-width: unset;
+    text-transform: capitalize;
+}
+.setting-form-col {
+    padding-left: 12px !important;
+}
+.marketplace-col .main-title-col .explore-filter-col {
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    padding: 30px 0px 30px;
+}
+
+.footer-sub-col {
+    margin-bottom: 30px;
+}
+.footer-sub-col  h4 {
+    word-break: break-all;
+}
+.notification-section  .global-history-details ul li {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    padding-bottom: 20px;
+}
+.notification-section  .global-history-details ul li > p {
+    flex-wrap: wrap;
+}
+.notification-section  .global-history-details ul li > p svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 10px auto !important;
+}
+
+.footer-sub-col:last-child {
+    text-align: center !important;
+}
+.footer-section .row:last-child {
+    margin-top: 0px !important;
+}
+
+
+
+
+}
